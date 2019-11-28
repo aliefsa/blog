@@ -7,7 +7,7 @@ if (!$_SESSION['login']) {
   </scipt>";
 }
 else {
-  include('../config/database.php');
+  include('../config/koneksi.php');
   $user = new Database();
   $user = mysqli_query($user->koneksi,
   "select * from users where password='$_session[login]'");

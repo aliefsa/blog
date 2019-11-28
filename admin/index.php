@@ -6,18 +6,15 @@ if (!$_SESSION['login']) {
         window.location = '/login.php'
     </script>";
 } else {
-    include ('../config/database.php');
+    include ('../config/koneksi.php');
     $user = new Database();
-    $user = mysqli_query(
-        $user->koneksi,
-        "select * from users where password='$_SESSION[login]'"
-    );
-    // var_dump($_SESSION['login]);
-    $user = mysqli_fect_array($user); ?>
-}
-?>
+    $user = mysqli_query($user->koneksi,
+    "SELECT * FROM users WHERE PASSWORD='$_SESSION[login]'");
+    // var_dump($_SESSION['login']);
+    $user = mysqli_fetch_array($user); ?>
+
 <!-- Header -->
-<?php include('../layouts/includes/head.php'); ?>
+<?php include('../layouts/includes/header.php'); ?>
 <!-- End Header -->
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
@@ -40,5 +37,4 @@ if (!$_SESSION['login']) {
 <?php include('../layouts/includes/script.php'); ?>
 <!-- End Script -->
 </html>
-<?php
-} ?>
+<?php } ?>

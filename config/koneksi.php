@@ -12,7 +12,7 @@
             );
             
             if ($this->koneksi) {
-                echo "berhasil";
+            //  echo "berhasil";
             }
             else {
                 echo "Koneksi Database Gagal"; 
@@ -20,5 +20,10 @@
         }
     }
 
-    $db = new Database();
-    ?>
+$db = new Database();
+
+// kategori
+include('kategori.php');
+// artikel
+include('artikel.php');
+?>

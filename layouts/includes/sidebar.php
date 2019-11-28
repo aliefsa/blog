@@ -7,16 +7,16 @@
                 <span class="badge badge-primary">NEW</span>
               </a>
             </li>
-            <li class="nav-title">Theme</li>
+            <li class="nav-title">MANAGEMEN BLOG</li>
             <li class="nav-item">
-              <a class="nav-link" href="colors.html">
-                <i class="nav-icon icon-drop"></i> Colors</a>
+              <a class="nav-link" href="/admin/kategori/">
+                <i class="nav-icon icon-drop"></i>Kategori</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="typography.html">
-                <i class="nav-icon icon-pencil"></i> Typography</a>
+              <a class="nav-link" href="/admin/artikel/">
+                <i class="nav-icon icon-pencil"></i> Artikel</a>
             </li>
-            <li class="nav-title">Components</li>
+            <!-- <li class="nav-title">Components</li>
             <li class="nav-item nav-dropdown">
               <a class="nav-link nav-dropdown-toggle" href="#">
                 <i class="nav-icon icon-puzzle"></i> Base</a>
@@ -163,7 +163,7 @@
                 <span class="badge badge-primary">NEW</span>
               </a>
             </li>
-            <li class="divider"></li>
+            <li class="divider"></li>-->
             <li class="nav-title">Extras</li>
             <li class="nav-item nav-dropdown">
               <a class="nav-link nav-dropdown-toggle" href="#">
